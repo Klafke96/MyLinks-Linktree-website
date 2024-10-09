@@ -1,11 +1,9 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Variáveis */
 :root {
     --text-color: white;
     --bg-color: #22222b;
@@ -18,6 +16,7 @@
     --github-icon: url('myassets/Icons/Branco/github.png');
     --spotify-icon: url('myassets/Icons/Branco/spotify.png');
     --pinterest-icon: url('myassets/Icons/Branco/pinterest.png');
+    --cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23000000" stroke="%23FFFFFF" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>') 12 12, auto;
 }
 .light {
     --text-color: black;
@@ -31,11 +30,16 @@
     --github-icon: url('myassets/Icons/Preto/github.png');
     --spotify-icon: url('myassets/Icons/Preto/spotify.png');
     --pinterest-icon: url('myassets/Icons/Preto/pinterest.png');
+    --cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>') 12 12, auto;
 }
 
-/* Estilos Globais */
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
 body {
-    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>') 12 12, auto;
+    cursor: var(--cursor);
     background: var(--bg-color);
     background-blend-mode: overlay;
     font-family: inter, sans-serif;
@@ -84,7 +88,6 @@ body {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* Lista de Botões */
 ul {
     list-style: none;
     display: flex;
@@ -131,13 +134,11 @@ ul li a:active {
     transition: none;
 }
 
-/* Animação Bounce */
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-5px); }
 }
 
-/* Container Social */
 #social-container {
     background-color: #1a1a1a;
     padding: 20px;
@@ -204,7 +205,6 @@ ul li a:active {
     overflow: hidden;
 }
 
-/* Texto de Rodapé */
 p.footer-text {
     margin-top: 30px;
     color: #888;
@@ -216,12 +216,10 @@ footer {
     text-align: center;
 }
 
-/* Efeito hover */
 button, a, .hover-effect {
-    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>') 12 12, pointer;
+    cursor: var(--cursor);
 }
 
-/* Animação de texto */
 @keyframes typing {
     from {
         width: 0;
@@ -269,7 +267,7 @@ button, a, .hover-effect {
 #theme-toggle img {
     width: 32px;
     height: 32px;
-    cursor: pointer;
+    cursor: var(--cursor);
     transition: transform 0.3s ease;
 }
 
