@@ -304,10 +304,8 @@ button, a, .hover-effect {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Estilos específicos para telas menores que 768px */
 @media only screen and (max-width: 768px) {
 
-    /* Ajustando o container para telas menores */
     #container {
         max-width: 100%;
         margin: 20px auto;
@@ -317,31 +315,27 @@ button, a, .hover-effect {
         align-items: center;
     }
 
-    /* Botões com menos largura e texto proporcional */
     ul li a {
-        width: 75vw;               /* Botões ocupam 75% da largura da tela */
-        padding: 14px 10px;         /* Padding menor para um design mais leve */
-        font-size: 16px;            /* Tamanho da fonte menor */
-        border-radius: 8px;         /* Bordas mais suavemente arredondadas */
+        width: 75vw;
+        padding: 14px 10px;
+        font-size: 16px;
+        border-radius: 8px;
         box-sizing: border-box;
     }
 
-    /* Ajustando o espaço entre os botões */
     ul {
-        gap: 12px;                  /* Espaçamento suave entre os botões */
+        gap: 12px;
     }
 
-    /* Ajustando os ícones sociais */
     #social-icons {
-        margin-top: 16px;           /* Espaçamento entre botões e ícones sociais */
+        margin-top: 16px;
     }
 
     #social-icons a {
-        width: 28px;                /* Tamanho dos ícones sociais reduzido */
+        width: 28px;
         height: 28px;
     }
 
-    /* Ajustando o rodapé */
     footer {
         padding: 16px 0;
         font-size: 12px;
