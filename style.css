@@ -304,43 +304,41 @@ button, a, .hover-effect {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-
-/* Estilos específicos para telas menores que 768px */
 @media only screen and (max-width: 768px) {
 
     /* Ajustando o container para telas menores */
     #container {
-        max-width: 100%;           /* O container ocupará toda a largura disponível */
-        margin: 20px auto;         /* Centralizando o container */
-        padding: 0 16px;           /* Pequeno espaçamento nas laterais */
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 0 16px;
         display: flex;
         flex-direction: column;
-        align-items: center;       /* Centraliza o conteúdo horizontalmente */
+        align-items: center;
     }
 
-    /* Ajustando os botões para ocuparem quase toda a largura da tela no mobile */
+    /* Aumentando a largura e tamanho dos botões */
     ul li a {
-        width: 90vw;               /* O botão ocupa 90% da largura da tela (viewport) */
-        max-width: none;           /* Remove qualquer limitação de largura máxima */
-        padding: 12px 16px;        /* Ajusta o espaçamento interno */
-        font-size: 14px;           /* Reduzindo o tamanho da fonte para caber melhor */
-        box-sizing: border-box;    /* Garante que o padding não ultrapasse a largura total */
+        width: 90vw;               /* Botões ocupam 90% da largura da tela */
+        max-width: none;            /* Remove o limite de largura máxima */
+        padding: 20px 16px;         /* Aumenta o padding para botões maiores */
+        font-size: 18px;            /* Aumenta o tamanho da fonte dos botões */
+        border-radius: 12px;        /* Bordas mais arredondadas */
+        box-sizing: border-box;     /* Garante que o padding não afete a largura */
     }
 
     /* Ajustando os ícones sociais */
     #social-icons {
-        margin-top: 16px;          /* Espaçamento entre os botões e os ícones sociais */
+        margin-top: 20px;
     }
 
     #social-icons a {
-        width: 20px;               /* Reduzindo o tamanho dos ícones sociais */
-        height: 20px;
+        width: 28px;                /* Aumentando o tamanho dos ícones */
+        height: 28px;
     }
 
     /* Ajustando o rodapé */
     footer {
-        padding: 16px 0;
-        font-size: 12px;
+        padding: 24px 0;
+        font-size: 14px;            /* Ajuste no tamanho do texto do rodapé */
     }
 }
-
