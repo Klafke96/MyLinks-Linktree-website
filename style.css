@@ -304,6 +304,7 @@ button, a, .hover-effect {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* Estilos específicos para telas menores que 768px */
 @media only screen and (max-width: 768px) {
 
     /* Ajustando o container para telas menores */
@@ -316,35 +317,36 @@ button, a, .hover-effect {
         align-items: center;
     }
 
-    /* Aumentando a altura e tamanho dos botões */
+    /* Botões com menos largura e texto proporcional */
     ul li a {
-        width: 90vw;               /* Botões ocupam 90% da largura da tela */
-        padding: 24px 16px;         /* Padding para botões mais altos */
-        font-size: 20px;            /* Tamanho da fonte maior */
-        border-radius: 10px;        /* Bordas arredondadas */
+        width: 75vw;               /* Botões ocupam 75% da largura da tela */
+        padding: 14px 10px;         /* Padding menor para um design mais leve */
+        font-size: 16px;            /* Tamanho da fonte menor */
+        border-radius: 8px;         /* Bordas mais suavemente arredondadas */
         box-sizing: border-box;
     }
 
     /* Ajustando o espaço entre os botões */
     ul {
-        gap: 20px;                  /* Espaçamento entre os botões */
+        gap: 12px;                  /* Espaçamento suave entre os botões */
     }
 
     /* Ajustando os ícones sociais */
     #social-icons {
-        margin-top: 20px;           /* Espaçamento entre botões e ícones sociais */
+        margin-top: 16px;           /* Espaçamento entre botões e ícones sociais */
     }
 
     #social-icons a {
-        width: 36px;                /* Aumenta o tamanho dos ícones */
-        height: 36px;
+        width: 28px;                /* Tamanho dos ícones sociais reduzido */
+        height: 28px;
     }
 
     /* Ajustando o rodapé */
     footer {
-        padding: 24px 0;
-        font-size: 14px;
+        padding: 16px 0;
+        font-size: 12px;
     }
 }
+
 
 
