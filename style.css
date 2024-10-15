@@ -36,6 +36,8 @@
 html, body {
     overflow-x: hidden;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -44,11 +46,14 @@ body {
     background-blend-mode: overlay;
     font-family: inter, sans-serif;
     color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 /* Perfil */
 #container {
-    width: 360px;
+    width: 100%;
+    max-width: 450px;
     margin: 56px auto 0;
     padding: 0 24px;
 }
@@ -96,6 +101,8 @@ ul {
 }
 
 ul li a {
+    width: 100%;
+    max-width: 450px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -162,9 +169,12 @@ ul li a:active {
     text-decoration: none;
     font-size: 0;
     position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#social-icons img.icon {
+#social-icons a.icon {
     width: 24px;
     height: 24px;
     transition: transform 0.3s ease;
@@ -172,34 +182,33 @@ ul li a:active {
     display: inline-block;
     background-repeat: no-repeat;
     font-size: 0;
-    position: absolute;
 }
 
-#social-icons img.email {
+#social-icons a.icon.email {
     background-image: var(--email-icon);
 }
 
-#social-icons img.instagram {
+#social-icons a.icon.instagram {
     background-image: var(--instagram-icon);
 }
 
-#social-icons img.linkedin {
+#social-icons a.icon.linkedin {
     background-image: var(--linkedin-icon);
 }
 
-#social-icons img.github {
+#social-icons a.icon.github {
     background-image: var(--github-icon);
 }
 
-#social-icons img.spotify {
+#social-icons a.icon.spotify {
     background-image: var(--spotify-icon);
 }
 
-#social-icons img.pinterest {
+#social-icons a.icon.pinterest {
     background-image: var(--pinterest-icon);
 }
 
-#social-icons a:hover img.icon {
+#social-icons a.icon:hover{
     transform: scale(1.2);
     z-index: 1;
     overflow: hidden;
@@ -290,3 +299,9 @@ button, a, .hover-effect {
 .light #sun-icon {
     display: inline-block;
 }
+
+#theme-toggle img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
