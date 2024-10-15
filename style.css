@@ -319,26 +319,20 @@ button, a, .hover-effect {
     /* Aumentando a altura dos botões e diminuindo o espaço entre eles */
     ul li a {
         width: 90vw;               /* Botões ocupam 90% da largura da tela */
-        max-width: none;
-        padding: 24px 16px;         /* Aumenta o padding para botões maiores (mais altos) */
-        font-size: 20px;            /* Aumenta o tamanho da fonte dos botões */
-        border-radius: 12px;        /* Bordas arredondadas */
+        padding: 24px 16px;         /* Aumenta o padding para botões maiores */
+        font-size: 20px;            /* Aumenta o tamanho da fonte */
+        border-radius: 12px;
         box-sizing: border-box;
     }
 
-    /* Diminuindo o espaçamento entre os botões */
-    ul {
-        gap: 12px;                  /* Reduzindo o espaçamento entre os botões */
-    }
-
-    /* Ajustando os ícones sociais */
+    /* Ajustando o tamanho dos ícones sociais */
     #social-icons {
         margin-top: 20px;
     }
 
     #social-icons a {
-        width: 28px;                /* Tamanho dos ícones */
-        height: 28px;
+        width: 36px;                /* Aumenta o tamanho dos ícones */
+        height: 36px;
     }
 
     /* Ajustando o rodapé */
@@ -347,3 +341,4 @@ button, a, .hover-effect {
         font-size: 14px;
     }
 }
+
